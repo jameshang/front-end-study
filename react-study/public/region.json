@@ -1,0 +1,20 @@
+[
+    {
+        "key": "101",
+        "value": "Aisa",
+        "city": [
+            { "key": "101001", "value": "China" },
+            { "key": "101002", "value": "Japan" },
+            { "key": "101003", "value": "India" }
+        ]
+    },
+    {
+        "key": "102",
+        "value": "Europe",
+        "city": [
+            { "key": "102001", "value": "United Kingdon" },
+            { "key": "102002", "value": "Germany" },
+            { "key": "102003", "value": "France" }
+        ]
+    }
+]
