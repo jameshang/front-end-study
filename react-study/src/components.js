@@ -130,7 +130,8 @@ class Region extends Component {
         })
     }
 
-    handleRegionData = (result) => {
+    handleRegionData = (result, status) => {
+        console.log('Handle region data status===%s', status);
         var cityData = {};
         var defKey;
         var region = result.map(
@@ -151,10 +152,15 @@ class Region extends Component {
         });
     };
 
+    handleRegionError = (req, status, err)=>{
+        console.log('Handle region error: req=%s\nstatus=%s\nerr=%s', req, status, err);
+    }
+
     componentDidMount() {
         this.serverRequest = $.ajax({
             url: this.props.source,
             method: "GET",
+            dataType: "json",
             success: this.handleRegionData
         });
     }
