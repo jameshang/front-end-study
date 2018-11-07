@@ -2,6 +2,8 @@ logs/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 *.log
+node_modules/
+package-lock.json
 
 ### STS ###
 .apt_generated

@@ -1,24 +1,23 @@
 <template>
-  <div>
-    <h3 v-on:click="handleClick">{{caption}}</h3>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data () {
-    return {
-      caption: 'VUE study'
-    }
-  },
-  methods: {
-    handleClick: function (e) {
-      console.log(e.target)
-    }
-  }
+  name: 'App'
 }
 </script>
 
 <style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
